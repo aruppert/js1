@@ -1,0 +1,27 @@
+{
+  "name": "js1",
+  "version": "1.0.0",
+  "description": "javascript calculator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aruppert/js1.git"
+  },
+  "keywords": [
+    "javascript",
+    "js"
+  ],
+  "author": "AMAR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aruppert/js1/issues"
+  },
+  "homepage": "https://github.com/aruppert/js1#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
