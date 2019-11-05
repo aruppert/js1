@@ -11,7 +11,7 @@ parseInt(firstElement.value);
 // alert(firstElement.value);
 firstElement.value = "619";
 
-submitButton.addEventListener('click', function() {
-const sum = 
+// submitButton.addEventListener('click', function() {
+// const sum = parseInt)
 
-})
+// })
