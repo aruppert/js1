@@ -1,6 +1,6 @@
 "use strict";
 
-import { sum, sub, div, multi } from "./lib/operator";
+import { sum, sub, div, multi, countDigits } from "./lib/operator";
 
 const firstInput = document.querySelector("[name=first]");
 const secondInput = document.querySelector("[name=second]");
@@ -9,6 +9,8 @@ const sumButton = document.querySelector(".sum");
 const subButton = document.querySelector(".sub");
 const divButton = document.querySelector(".div");
 const multiButton = document.querySelector(".multi");
+const lengthButton = document.querySelector(".length");
+let resultLength = result.innerHTML.length;
 
 function getInputs() {}
 
@@ -34,4 +36,8 @@ sumButton.addEventListener("click", function() {
   const secondNumber = parseInt(secondInput.value);
 
   result.innerHTML = sum(firstNumber, secondNumber);
+});
+
+lengthButton.addEventListener("click", function() {
+  Alert(resultLength);
 });
