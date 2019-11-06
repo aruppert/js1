@@ -4,7 +4,7 @@
   "description": "javascript calculator",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/*.html",
+    "dev": "parcel src/*.html -p 3332",
     "build": "parcel build src/*.html"
   },
   "repository": {

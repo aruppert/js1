@@ -1,17 +1,37 @@
-// const primaryColor = "red";
-// const secondaryColor = "blue";
+"use strict";
 
-// alert("Hallo fische");
+import { sum, sub, div, multi } from "./lib/operator";
 
-const firstElement = document.querySelector("[name=first]");
-const secondElement = document.querySelector("[name=second]");
-const submitButton = document.querySelector(".submit");
-parseInt(firstElement.value);
+const firstInput = document.querySelector("[name=first]");
+const secondInput = document.querySelector("[name=second]");
+const result = document.querySelector("#result");
+const sumButton = document.querySelector(".sum");
+const subButton = document.querySelector(".sub");
+const divButton = document.querySelector(".div");
+const multiButton = document.querySelector(".multi");
 
-// alert(firstElement.value);
-firstElement.value = "619";
+function getInputs() {}
 
-// submitButton.addEventListener('click', function() {
-// const sum = parseInt)
+subButton.addEventListener("click", function() {
+  const firstNumber = parseInt(firstInput.value);
+  const secondNumber = parseInt(secondInput.value);
+  result.innerHTML = sub(firstNumber, secondNumber);
+});
 
-// })
+divButton.addEventListener("click", function() {
+  const firstNumber = parseInt(firstInput.value);
+  const secondNumber = parseInt(secondInput.value);
+  result.innerHTML = div(firstNumber, secondNumber);
+});
+multiButton.addEventListener("click", function() {
+  const firstNumber = parseInt(firstInput.value);
+  const secondNumber = parseInt(secondInput.value);
+  result.innerHTML = multi(firstNumber, secondNumber);
+});
+sumButton.addEventListener("click", function() {
+  const firstNumber = parseInt(firstInput.value);
+
+  const secondNumber = parseInt(secondInput.value);
+
+  result.innerHTML = sum(firstNumber, secondNumber);
+});
