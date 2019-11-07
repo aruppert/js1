@@ -13,11 +13,11 @@ const multiButton = document.querySelector(".multi");
 
 function getInputs() {}
 
-// subButton.addEventListener("click", function() {
-//   const firstNumber = parseInt(firstInput.value);
-//   const secondNumber = parseInt(secondInput.value);
-//   result.innerHTML = sub(firstNumber, secondNumber);
-// });
+subButton.addEventListener("click", function() {
+  const firstNumber = parseInt(firstInput.value);
+  const secondNumber = parseInt(secondInput.value);
+  result.innerHTML = sub(firstNumber, secondNumber);
+});
 
 sumButton.addEventListener("click", function() {
   const firstNumber = parseInt(firstInput.value);
@@ -39,10 +39,10 @@ multiButton.addEventListener("click", function() {
   const secondNumber = parseInt(secondInput.value);
   result.innerHTML = multi(firstNumber, secondNumber);
 });
-sumButton.addEventListener("click", function() {
-  const firstNumber = parseInt(firstInput.value);
+// sumButton.addEventListener("click", function() {
+//   const firstNumber = parseInt(firstInput.value);
 
-  const secondNumber = parseInt(secondInput.value);
+//   const secondNumber = parseInt(secondInput.value);
 
-  result.innerHTML = sum(firstNumber, secondNumber);
-});
+//   result.innerHTML = sum(firstNumber, secondNumber);
+// });
