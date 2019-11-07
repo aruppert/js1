@@ -11,6 +11,16 @@ body {
   align-items: center;
   color: aliceblue;
   font-size: 2em;
+
+  > div {
+    border: 2px solid aliceblue;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .sum {
@@ -34,7 +44,7 @@ body {
   text-justify: center;
   align-items: center;
   // background: white;
-  border: 2px solid aliceblue;
+  border: 2px solid rgb(231, 104, 85);
   width: 70%;
   height: 70%;
 }
@@ -44,4 +54,25 @@ body {
 
 [name="second"] {
   grid-area: 1 / 2 / 2 /3;
+}
+#history {
+  grid-area: 6 / 3 / 7 / 5;
+  border: 2px solid rgb(231, 104, 85);
+  width: 100%;
+  heigth: 100%;
+  font-size: 0.6em;
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-evenly;
+}
+
+button {
+  zoom: 1.4;
+  border-radius: 5px;
+}
+
+input {
+  zoom: 1;
+  border-radius: 5px;
 }

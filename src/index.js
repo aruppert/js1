@@ -1,6 +1,7 @@
 "use strict";
 
 import { sum, sub, div, multi } from "./lib/operator";
+import { createDivWithContent, appendElementToElement } from "./lib/elements";
 
 const firstInput = document.querySelector("[name=first]");
 const secondInput = document.querySelector("[name=second]");
@@ -12,10 +13,20 @@ const multiButton = document.querySelector(".multi");
 
 function getInputs() {}
 
-subButton.addEventListener("click", function() {
+// subButton.addEventListener("click", function() {
+//   const firstNumber = parseInt(firstInput.value);
+//   const secondNumber = parseInt(secondInput.value);
+//   result.innerHTML = sub(firstNumber, secondNumber);
+// });
+
+sumButton.addEventListener("click", function() {
   const firstNumber = parseInt(firstInput.value);
   const secondNumber = parseInt(secondInput.value);
-  result.innerHTML = sub(firstNumber, secondNumber);
+  const finalResult = sum(firstNumber, secondNumber);
+  result.innerHTML = finalResult;
+  const historyElement = createDivWithContent(finalResult);
+  const parentElement = document.getElementById("history");
+  appendElementToElement(parentElement, historyElement);
 });
 
 divButton.addEventListener("click", function() {
