@@ -4,22 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="scss/style.scss" />
     <title>Texas Taschenrechner</title>
   </head>
-  <!-- <style>
-    #test {
-      background: #000;
-    }
-  </style> -->
   <body>
-    <input
-      type="text"
-      name="first"
-      placeholder="enter first number"
-      value="22"
-    />
-    +
+    <input type="text" name="first" placeholder="1. #" value="22" />
     <input
       type="text"
       name="second"
@@ -27,12 +16,29 @@
       value="117"
       id="test"
     />
+    <div id="id11">AC</div>
+    <div id="id12">+/-</div>
+    <div id="id13">%</div>
+    <div id="id7">7</div>
+    <div id="id8">8</div>
+    <div id="id9">9</div>
+    <div id="id4">4</div>
+    <div id="id5">5</div>
+    <div id="id6">6</div>
+    <div id="id1">1</div>
+    <div id="id2">2</div>
+    <div id="id3">3</div>
+    <div id="id10">0</div>
+    <div id="id14">,</div>
+
+    <div id="history"></div>
+
     <button class="sum">Add</button>
     <button class="sub">Subtract</button>
     <button class="multi">Multiply</button>
     <button class="div">Divide</button>
     <div id="result">0</div>
-    <div id="history"></div>
+
     <script src="./index.js"></script>
   </body>
 </html>
