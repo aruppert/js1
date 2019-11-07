@@ -1,7 +1,6 @@
 export function createDivWithContent(content) {
   let divElement = document.createElement("div");
   divElement.innerHTML = content;
-
   return divElement;
 }
 
