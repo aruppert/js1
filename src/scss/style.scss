@@ -1,0 +1,47 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(6, 7, 2, 0.383);
+  justify-items: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 2em;
+}
+
+.sum {
+  grid-area: 5 / 4 / 6 / 5;
+}
+.sub {
+  grid-area: 4 / 4 / 5 / 5;
+}
+.multi {
+  grid-area: 3 / 4 / 4 / 5;
+}
+.div {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.length {
+  grid-area: 6 / 4 / 7 / 5;
+}
+#result {
+  grid-area: 1 / 3 / 2 / 5;
+  text-align: center;
+  text-justify: center;
+  align-items: center;
+  // background: white;
+  border: 2px solid aliceblue;
+  width: 70%;
+  height: 70%;
+}
+#first {
+  grid-area: 1 / 1 / 2 /2;
+}
+
+[name="second"] {
+  grid-area: 1 / 2 / 2 /3;
+}
